@@ -1,19 +1,19 @@
 <div class="container-big-card">
   <div class="big-card-photo">
-    <a href="">
-    <img
-        src="{{postPicture}}"
-        alt=""
-        height="400px"
-      />
+    <a [routerLink]="['content', Id]">
+      <img src="{{ postPicture }}" alt="" height="400px" />
     </a>
 
-  <div class="big-card-title">
-    <h1><a  href="">{{ postTitle }}</a></h1>
-  </div>
+    <div class="big-card-title">
+      <h1>
+        <a [routerLink]="['content', Id]">{{ postTitle }}</a>
+      </h1>
+    </div>
 
-  <div class="big-card-description">
-     <p><a href="">{{postDescription}}</a></p>
+    <div class="big-card-description">
+      <p>
+        <a href="">{{ postDescription }}</a>
+      </p>
+    </div>
   </div>
-</div>
 </div>
